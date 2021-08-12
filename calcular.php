@@ -14,12 +14,9 @@ if (
     $valor = number_format(($distanciaEntreCidades * 6) + ($quantiaPedagios * 9.40), 2, ',', '.');
 
     $texto = "A viagem de $cidadeOrigem à $cidadeDestino irá custar o valor total de R$$valor.";
+    ?>
 
-} else {
-    echo "<h1>Você não enviou as informações corretamente</h1>";
-}
-?>
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -36,3 +33,8 @@ if (
 </body>
 
 </html>
+<?php
+
+} else {
+    echo "<h1>Você não enviou as informações corretamente</h1>";
+}
